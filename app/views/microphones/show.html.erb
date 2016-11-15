@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @microphone.make %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @microphone.serial %>
+</p>
+
+<%= link_to 'Edit', edit_microphone_path(@microphone) %> |
+<%= link_to 'Back', microphones_path %>

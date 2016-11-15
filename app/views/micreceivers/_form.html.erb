@@ -1,0 +1,21 @@
+<%= form_for(@micreceiver) do |f| %>
+  <% if @micreceiver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@micreceiver.errors.count, "error") %> prohibited this micreceiver from being saved:</h2>
+
+      <ul>
+      <% @micreceiver.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :receiver %><br>
+    <%= f.text_field :receiver %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

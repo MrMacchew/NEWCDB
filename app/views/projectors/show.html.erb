@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @projector.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @projector.model %>
+</p>
+
+<p>
+  <strong>Mac:</strong>
+  <%= @projector.mac %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @projector.serial %>
+</p>
+
+<%= link_to 'Edit', edit_projector_path(@projector) %> |
+<%= link_to 'Back', projectors_path %>

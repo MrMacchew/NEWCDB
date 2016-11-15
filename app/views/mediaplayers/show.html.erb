@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @mediaplayer.type %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @mediaplayer.make %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @mediaplayer.serial %>
+</p>
+
+<%= link_to 'Edit', edit_mediaplayer_path(@mediaplayer) %> |
+<%= link_to 'Back', mediaplayers_path %>

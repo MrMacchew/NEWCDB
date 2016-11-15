@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Projectors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Mac</th>
+      <th>Serial</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projectors.each do |projector| %>
+      <tr>
+        <td><%= projector.make %></td>
+        <td><%= projector.model %></td>
+        <td><%= projector.mac %></td>
+        <td><%= projector.serial %></td>
+        <td><%= link_to 'Show', projector %></td>
+        <td><%= link_to 'Edit', edit_projector_path(projector) %></td>
+        <td><%= link_to 'Destroy', projector, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Projector', new_projector_path %>

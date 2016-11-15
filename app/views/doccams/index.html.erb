@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Doccams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Serial</th>
+      <th>Wtag</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @doccams.each do |doccam| %>
+      <tr>
+        <td><%= doccam.make %></td>
+        <td><%= doccam.model %></td>
+        <td><%= doccam.serial %></td>
+        <td><%= doccam.wtag %></td>
+        <td><%= link_to 'Show', doccam %></td>
+        <td><%= link_to 'Edit', edit_doccam_path(doccam) %></td>
+        <td><%= link_to 'Destroy', doccam, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Doccam', new_doccam_path %>

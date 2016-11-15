@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Micreceivers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Receiver</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @micreceivers.each do |micreceiver| %>
+      <tr>
+        <td><%= micreceiver.receiver %></td>
+        <td><%= link_to 'Show', micreceiver %></td>
+        <td><%= link_to 'Edit', edit_micreceiver_path(micreceiver) %></td>
+        <td><%= link_to 'Destroy', micreceiver, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Micreceiver', new_micreceiver_path %>

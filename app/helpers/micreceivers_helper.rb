@@ -1,0 +1,2 @@
+module MicreceiversHelper
+end

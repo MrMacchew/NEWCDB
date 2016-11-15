@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Microphones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Serial</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @microphones.each do |microphone| %>
+      <tr>
+        <td><%= microphone.make %></td>
+        <td><%= microphone.serial %></td>
+        <td><%= link_to 'Show', microphone %></td>
+        <td><%= link_to 'Edit', edit_microphone_path(microphone) %></td>
+        <td><%= link_to 'Destroy', microphone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Microphone', new_microphone_path %>

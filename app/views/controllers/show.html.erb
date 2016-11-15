@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @controller.model %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @controller.serial %>
+</p>
+
+<p>
+  <strong>Mac:</strong>
+  <%= @controller.mac %>
+</p>
+
+<%= link_to 'Edit', edit_controller_path(@controller) %> |
+<%= link_to 'Back', controllers_path %>

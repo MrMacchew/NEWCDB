@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @doccam.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @doccam.model %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @doccam.serial %>
+</p>
+
+<p>
+  <strong>Wtag:</strong>
+  <%= @doccam.wtag %>
+</p>
+
+<%= link_to 'Edit', edit_doccam_path(@doccam) %> |
+<%= link_to 'Back', doccams_path %>

@@ -1,0 +1,21 @@
+<%= form_for(@interactivekit) do |f| %>
+  <% if @interactivekit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@interactivekit.errors.count, "error") %> prohibited this interactivekit from being saved:</h2>
+
+      <ul>
+      <% @interactivekit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :serial %><br>
+    <%= f.text_field :serial %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

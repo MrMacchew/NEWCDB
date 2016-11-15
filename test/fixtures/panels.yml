@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  model: MyString
+  serail: MyString
+  mac: MyString
+
+two:
+  model: MyString
+  serail: MyString
+  mac: MyString

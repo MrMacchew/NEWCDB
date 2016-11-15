@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @tv.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @tv.model %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @tv.serial %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @tv.tag %>
+</p>
+
+<p>
+  <strong>Mac:</strong>
+  <%= @tv.mac %>
+</p>
+
+<%= link_to 'Edit', edit_tv_path(@tv) %> |
+<%= link_to 'Back', tvs_path %>
